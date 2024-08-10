@@ -10,12 +10,7 @@ import attackOptionsList from './data/attackOptionsList'
 import namesList from './data/namesList'
 
 export default function App() {
-  const [characterData,setCharacterData]=useState({hat:true,shield:true,weapon:"sword",name:"Aragorn",attackOptions:['Arkan Boltu',
-  'Vahşi Sel',
-  'Zehir Yağmuru',
-  'İhtişam Yanılsaması',
-  'Öfke Işını',
-  'Hayat Saldırısı',]},)
+  const [characterData,setCharacterData]=useState({hat:true,shield:true,weapon:"sword",name:"Aragorn",attackOptions:attackOptionsList.slice(10,16),stats:{hp:100,mp:30,strength:99}})
   /* Challenge
 
     Bu video oyunu karakter yaratıcısının bir başlangıç karakterine ihtiyacı var. Göreviniz aşağıdakileri yaparak bir tane oluşturmak: 
